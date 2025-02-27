@@ -1,0 +1,189 @@
+/* general style of my page */
+body {
+    background-color: black;
+    color: white;
+    font-family: K2D, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* my heading styling */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: black; /* Background color for header */
+    color: white;
+}
+
+/* Style for the title */
+.header-content h1, h2 {
+    margin: 0;
+    font-size:30 px;
+}
+
+/* Nav group style */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: left;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Button Section w links for resume and contact */
+.buttons {
+    display: flex;
+    justify-content: center; /* cuz I want the buttons horizontally */
+    gap: 50px; /* referring to space between buttons */
+    padding: 40px 0; /* referring to space above and below the buttons */
+}
+
+/* Button Styling */
+.btn {
+    text-decoration: none;
+    padding: 20px 34px;
+    font-size: 25px;
+    font-weight: regular;
+    border-radius: 5px;
+    width: 150px; /* Set a fixed width for even spacing */
+}
+
+/* Resume Button */
+.resume-btn {
+    background-color: #610002; /* Dark Red */
+    color: white;
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    gap: 200px;
+    padding: 100 px 80 px;
+}
+
+.about img {
+    width:350px;
+    height: auto;
+    border-radius: 10px
+}
+
+.about p {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+/* Hover Effect for Buttons */
+.btn:hover {
+    opacity: 0.8;
+}
+
+.arrows {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid lightgray;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    max-width: 100%;
+    background-color:#610002;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.project img {
+    width: 50%; /* Adjust the percentage to make the image smaller */
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin-top: auto;
+    font-size: 18px;
+}
+
+@media (max-width: 400px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project {
+        width: 80%;
+        max-width: 100%;
+    }
+}
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    background: lightgray;
+    border: none;
+}
+
+button {
+    background: white
+    padding: 10px 20 px;
+    border: none;
+    color: Black;
+    cursor: pointer;
+}
