@@ -3,7 +3,7 @@ body {
     background-color: black;
     color: white;
     font-family: K2D, sans-serif;
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0;
 }
@@ -47,7 +47,7 @@ nav ul li a {
 /* Button Section w links for resume and contact */
 .buttons {
     display: flex;
-    justify-content: center; /* cuz I want the buttons horizontally */
+    justify-content: center; /* to display the buttons horizontally */
     gap: 50px; /* referring to space between buttons */
     padding: 40px 0; /* referring to space above and below the buttons */
 }
